@@ -1245,6 +1245,11 @@ body {
 .grey {
   background: #f2f2f2;
 }
+.dental-services ul {
+  width: 100%;
+  float: left;
+  padding: 0;
+}
 .dental-services ul li {
   list-style: none;
   width: 50%;
@@ -1274,6 +1279,18 @@ body {
 @media only screen and (max-width: 991px) {
   .feature .table-cell-width td {
     width: 50%;
+    float: left;
+  }
+  .md-scn {
+    width: 100%;
+    float: left;
+  }
+  .md-scn .p-5 {
+    width: 100%;
+    float: left;
+  }
+  .md-scn .dental-services {
+    width: 100%;
     float: left;
   }
 }
