@@ -428,32 +428,37 @@ body {
   background: @gray;
 }
 
-.dental-services ul li {
-  list-style: none;
-  width: 50%;
-  float: left;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.dental-services ul li .feature-bg {
-  -webkit-transition: all 1.3s ease-in-out;
-  -moz-transition: all 1.3s ease-in-out;
-  -o-transition: all 1.3s ease-in-out;
-  background: @primary;
-  box-shadow: 0 0 0 14px fade(@primary, 40%);
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 15px;
-  display: inline-block;
-}
-
-.dental-services ul li h3 {
-  margin-top: 30px;
-  color: @black;
-  font-size: @globalSize;
+.dental-services {
+  ul {
+    width: 100%;
+    float: left;
+    padding: 0;
+    li {
+      list-style: none;
+      width: 50%;
+      float: left;
+      text-align: center;
+      margin-top: 40px;
+      .feature-bg {
+        -webkit-transition: all 1.3s ease-in-out;
+        -moz-transition: all 1.3s ease-in-out;
+        -o-transition: all 1.3s ease-in-out;
+        background: @primary;
+        box-shadow: 0 0 0 14px fade(@primary, 40%);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 15px;
+        display: inline-block;
+      }
+      h3 {
+        margin-top: 30px;
+        color: @black;
+        font-size: @globalSize;
+      }
+    }
+  }
 }
 
 /* Responsive */
@@ -461,6 +466,19 @@ body {
   .feature .table-cell-width td {
     width: 50%;
     float: left;
+  }
+
+  .md-scn {
+    width: 100%;
+    float: left;
+    .p-5 {
+      width: 100%;
+      float: left;
+    }
+    .dental-services {
+      width: 100%;
+      float: left;
+    }
   }
 }
 
