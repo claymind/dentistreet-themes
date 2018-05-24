@@ -32,7 +32,26 @@
 
   });
 
+ function determineDropDirection() {
+    $(".dropdown-menu").each(function () {
+      $(this).css({
+        visibility: "hidden",
+        display: "block"
+      });
 
+      $(this).parent().removeClass("dropup");
+
+      if ($(this).offset().top + $(this).outerHeight() > $(window).innerHeight() + $(window).scrollTop()) {
+        $(this).parent().addClass("dropup");
+      }
+
+      $(this).removeAttr("style");
+    });
+  }
+
+  determineDropDirection();
+
+  $(window).scroll(determineDropDirection);
 
   // Document on load.
   $(function(){
