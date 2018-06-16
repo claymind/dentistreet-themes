@@ -245,7 +245,7 @@ body {
 }
 
 .bg-theme {
-    background: url("https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/15/img/teeth-bg.png") no-repeat 100% 100% fade(@primary, 80%);
+  background: url("https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/15/img/teeth-bg.png") no-repeat 100% 100% fade(@primary, 80%);
   height: 100vh;
   display: table-cell;
   vertical-align: middle;
@@ -365,7 +365,7 @@ body {
 .footer-top {
   background: #0e2034;
   h3 {
-    margin-top: 30px;
+    margin-top: 20px;
     color: @white;
     font-size: @globalSize+3;
     text-transform: uppercase;
@@ -386,7 +386,7 @@ body {
     }
   }
   .social-links {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     float: left;
     margin-top: 0;
     li {
@@ -401,6 +401,16 @@ body {
       }
     }
   }
+  .our-services{
+    float: left;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+    li{
+      float: left;
+      margin: 0 8px 0 0;
+    }
+  }
 }
 
 .footer-bottom {
@@ -409,6 +419,17 @@ body {
   text-align: center;
   color: #717171;
   font-size: 11px;
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    li{
+      float: left;
+      margin: 0 5px;
+    }
+  }
   p {
     margin: 0;
   }
