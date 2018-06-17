@@ -70,6 +70,7 @@
 
 a {
   color: @primary;
+     transition: all 0.4s ease-in-out;
   &:hover {
     color: lighten(@primary, 10%);;
   }
@@ -307,7 +308,7 @@ body {
       border: 1px solid @primary;
       border-radius: 50px;
       font-size: 0;
-      background: @primary url(../img/search-icon.png) no-repeat 5px 5px;
+      background: @primary url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/17/img/search-icon.png) no-repeat 5px 5px;
       float: right;
       color: @white;
     }
@@ -348,7 +349,7 @@ body {
 .navbar-toggler {
   border: 1px solid @white;
   .navbar-toggler-icon {
-    background: url(../img/toggle.svg);
+    background: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/17/img/toggle.svg);
   }
 }
 
@@ -397,8 +398,8 @@ body {
 
 /* testimonial */
 .testimonial {
-  background: url(../img/testimonial-bg.jpg) no-repeat 0 0;
   background-size: cover;
+   background-repeat: no-repeat;
   height: 834px;
   margin-top: 170px;
   font-family: 'Lora', serif;
@@ -411,7 +412,7 @@ body {
   margin-top: 100px;
   .review-content {
     p {
-      background: url(../img/quote-icon.png) no-repeat 0 0;
+      background: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/17/img/quote-icon.png) no-repeat 0 0;
       font-size: 30px;
       color: @white;
       line-height: 42px;
@@ -433,7 +434,7 @@ body {
 }
 
 .appointment-section {
-  background: url(../img/footer-bg.jpg) repeat 0 0;
+  background: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/17/img/footer-bg.jpg) repeat 0 0;
   padding: 90px 0;
   .bg-grey {
     background: #dedede;
@@ -457,6 +458,14 @@ body {
           float: left;
         }
       }
+    }
+  }
+  .list-group {
+    .list-group-item{
+     padding: .75rem .55rem;
+     &:hover{
+       margin-left: 5px;
+     }
     }
   }
 }
@@ -496,6 +505,9 @@ footer {
     font-size: 11px;
     padding: 0;
   }
+.footer-logo{
+  max-width: 110px;
+}
 }
 
 @media (max-width: 992px) {
