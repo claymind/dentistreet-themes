@@ -420,7 +420,7 @@ aside {
 }
 
 .testimonial {
-  background: url(../img/testimonial-bg.jpg) no-repeat 0 0 fixed;
+  background: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/18/img/testimonial-bg.jpg) no-repeat 0 0 fixed;
   background-size: cover;
   min-height: 400px;
   margin-top: 100px;
@@ -543,7 +543,7 @@ footer {
     padding: 0;
     li {
       margin-bottom: 10px;
-      font-size: 14px;
+      font-size: 11px;
       color: @black;
       span {
         width: 50%;
@@ -749,16 +749,14 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
   #colorlib-main {
     width: 70%;
   }
-}
-
-@media screen and (min-width: 768px) {
-  footer {
-    padding: 10px;
-    img {
-      display: none;
+  footer{
+    img{
+      bottom: 0;
+      top: auto;
     }
   }
 }
+
 
 @media screen and (max-width: 768px) {
   #colorlib-aside {
@@ -787,9 +785,9 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     }
   }
   footer {
+    padding: 10px;
     img {
       display: none;
     }
   }
 }
-
