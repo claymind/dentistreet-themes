@@ -1,185 +1,157 @@
-﻿@import "_variable.less";
+@import (reference) "_variable.less";
 
 /* Reviews */
 .testimonial {
-    position: relative;
-    background-blend-mode: multiply;
-    margin-bottom: 100px;
+  position: relative;
+  background-blend-mode: multiply;
+  padding: 0;
+  padding-bottom: 40px;
+
+  p {
+    font-size: @font16;
+  }
+
+  i {
+    font-size: @font60;
+  }
+
+  .profile-circle {
+    background-color: transparent !important;
+    background-image: url("https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/common/img/client_1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0px;
+    text-transform: uppercase;
+  }
+
+  .carousel {
+    img {
+      width: auto;
+    }
+  }
+
+  .carousel-inner {
+    margin-top: 40px;
+  }
+
+  .company-review {
     text-align: center;
 
-    p {
-        font-size: @font16;
+    .photo-box-img {
+      border-radius: 50px;
     }
 
-    i {
-        font-size: @font60;
-    }
+    .review-content {
+      margin-left: 20px;
+      padding: 0 12px 6px 0;
 
-    .profile-circle {
-        background-color: transparent !important;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        height: 100px;
-        margin: 0 auto;
-        width: 100px;
-    }
-
-    h2 {
-        text-align: center;
-        margin: 0;
-        text-transform: uppercase;
-    }
-
-    .carousel {
-        img {
-            width: auto;
-        }
-    }
-
-
-    .carousel-inner {
-        margin-top: 40px;
-    }
-
-    .company-review {
-        text-align: center;
-      .photo-box {
-          border: 4px solid @black;
-          width: 110px;
-          border-radius: 100px;
-          height: 110px;
-          display: inline-block;
+      .biz-rating-large {
+        margin: 6px 0;
       }
-        .photo-box-img {
-          border-radius: 100%;
-          width: 100%;
-          height: 100%;
+
+      .biz-rating-large .rating-large {
+        position: relative;
+        overflow: hidden;
+        margin: -1px 6px 0 0;
+
+        .rating-qualifier {
+          display: block;
+          float: left;
+          font-weight: normal;
         }
-      .user-display-name {
-            font-size: @font16+2;
-            text-transform: uppercase;
-            color: @black;
-            margin-top: 20px;
-            font-weight: 700;
-          }
-        .review-content {
-             p {
-               background: url("../img/quote-icon.png") no-repeat 50% 50%;
-               color: #010101;
-               font-size: 18px;
-               min-height: 100px;
-               padding-top: 10px;
-               font-weight: 500;
-               margin-bottom: 40px;
-               margin-top: 20px;
-            }
+      }
 
-            margin-left: 20px;
-            padding: 0 12px 6px 0;
+      .rating, .rating-large, .rating-very-large {
+        position: relative;
+        overflow: hidden;
 
-            .biz-rating-large {
-                margin: 6px 0;
-            }
-
-            .biz-rating-large .rating-large {
-                position: relative;
-                overflow: hidden;
-                margin: -1px 6px 0 0;
-
-                .rating-qualifier {
-                    display: block;
-                    float: left;
-                    font-weight: normal;
-                }
-            }
-
-            .rating, .rating-large, .rating-very-large {
-                position: relative;
-                overflow: hidden;
-
-                .offscreen {
-                    clip: rect(0 0 0 0);
-                    position: absolute;
-                    left: -9999px;
-                    top: auto;
-                    overflow: hidden;
-                    width: 1px;
-                    height: 1px;
-                }
-
-                img {
-                    vertical-align: middle;
-                }
-            }
-
-            padding {
-                margin-bottom: 12px;
-            }
+        .offscreen {
+          clip: rect(0 0 0 0);
+          position: absolute;
+          left: -9999px;
+          top: auto;
+          overflow: hidden;
+          width: 1px;
+          height: 1px;
         }
-    }
 
-    .carousel-control.left, .carousel-control.right {
-        background-image: none !important;
-    }
-
-    .carousel-control {
-        background-color: rgba(0, 0, 0, 0);
-        bottom: 0;
-        left: 0;
-        opacity: 0.5;
-        position: absolute;
-        top: 50%;
-        width: auto !important;
-        padding: 20px;
-        z-index: 1;
-    }
-
-    .carousel-control {
-        .glyphicon-chevron-right, .carousel-control {
-            .icon-next {
-                margin-right: -10px;
-                right: 0;
-            }
+        img {
+          vertical-align: middle;
         }
+      }
+
+      padding {
+        margin-bottom: 12px;
+      }
     }
+  }
 
+  .carousel-control.left {
+    background-image: none;
+  }
 
-    .carousel-control.right {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.5) 100%);
-        background-repeat: repeat-x;
-        left: auto;
+  .carousel-control {
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: auto !important;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .carousel-control {
+    .glyphicon-chevron-right, .carousel-control {
+      .icon-next {
+        margin-right: -10px;
         right: 0;
-
-
-        .icon-next {
-            background-color: @black;
-            font-size: @font40;
-            height: 79px;
-            width: 50px;
-            padding: 19px;
-        }
+      }
     }
+  }
 
-    .left.carousel-control .icon-prev, .icon-next {
-        background-color: @black;
-        font-size: @font40;
-        height: 79px;
-        width: 50px;
-        padding: 19px;
-        top: 40%;
+  .carousel-control.right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.5) 100%);
+    background-repeat: repeat-x;
+    left: auto;
+    right: 0;
+
+    .icon-next {
+      background-color: @black;
+      font-size: @font40;
+      height: 79px;
+      width: 50px;
+      padding: 19px;
     }
+  }
+
+  .left.carousel-control .icon-prev, .icon-next {
+    background-color: @black;
+    font-size: @font40;
+    height: 79px;
+    width: 50px;
+    padding: 19px;
+    top: 40%;
+  }
 }
 
-
 .quote {
-	color: rgba(0,0,0,.1);
-	text-align: center;
-	margin-bottom: 30px;
-    margin-top: 50px;
+  color: rgba(0, 0, 0, .1);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .i-stars {
-  background: url(../img/stars.png) no-repeat;
+  background: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/common/img/stars.png) no-repeat;
   background-size: 132px 560px;
   display: inline-block;
   vertical-align: middle
@@ -189,6 +161,7 @@
   .i-stars {
     background-image: none !important
   }
+
   .i-stars img {
     position: relative;
     width: auto;
@@ -588,12 +561,12 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .i-stars {
-    background-image: url(img/themes/common/img/stars@2x.png)
+    background-image: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/common/img/stars@2x.png)
   }
 }
 
 .i-gray-stars {
-  background: url(img/themes/common/img/gray_stars.png) no-repeat;
+  background: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/common/img/gray_stars.png) no-repeat;
   background-size: 132px 560px;
   display: inline-block;
   vertical-align: middle
@@ -603,6 +576,7 @@
   .i-gray-stars {
     background-image: none !important
   }
+
   .i-gray-stars img {
     position: relative;
     width: auto;
@@ -1002,7 +976,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .i-gray-stars {
-    background-image: url(img/themes/common/img/gray_stars@2x.png)
+    background-image: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/common/img/gray_stars@2x.png)
   }
 }
 
@@ -1012,11 +986,11 @@
 }
 
 .filtered-reviews-content .i-stars {
-  background-image: url(img/themes/common/img/gray_stars.png)
+  background-image: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/common/img/gray_stars.png)
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .filtered-reviews-content .i-stars {
-    background-image: url(img/themes/common/img/gray_stars@2x.png)
+    background-image: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/common/img/gray_stars@2x.png)
   }
 }
