@@ -1218,6 +1218,7 @@ body {
   font-style: italic;
   font-weight: 700;
   color: #fff;
+  line-height: 40px;
 }
 .appointment-section {
   background: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/17/img/footer-bg.jpg) repeat 0 0;
