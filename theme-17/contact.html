@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="content/css/variation-cinnabar.css" rel="stylesheet" type="text/css"/>
-    <link href="content/css/animate.css" rel="stylesheet" type="text/css"/>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -25,17 +25,17 @@
         <div class="row">
             <div class="col-md-8 col-12">
                 <ul class="">
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-phone"></i>
-                            818.547.4949</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-envelope"></i>
-                            info@pacificdentalcare.org
-                        </a>
-                    </li>
+                  <li>
+                      <a href="tel:818.547.4949">
+                          <i class="fas fa-phone"></i>
+                          818.547.4949</a>
+                  </li>
+                  <li>
+                      <a href="mailto:info@pacificdentalcare.org">
+                          <i class="fas fa-envelope"></i>
+                          info@pacificdentalcare.org
+                      </a>
+                  </li>
                 </ul>
             </div>
             <div class="col-md-4 col-12 float-right">
@@ -55,7 +55,7 @@
 <header id="fh5co-header" class="navbar navbar-expand-lg header">
     <div class="container">
         <nav id="topNav" class="navbar navbar-toggleable-sm navbar-inverse bg-inverse w-100">
-            <a class="navbar-brand d-block d-lg-none" href="#"><img src="https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/17/img/logo.png"/> </a>
+            <a class="navbar-brand d-block" href="#"><img src="https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/17/img/logo.png"/> </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target=".navbar-collapse">
                 <span class="navbar-toggler-icon"></span>
@@ -92,8 +92,8 @@
     <div class="row">
         <div class="col-md-8 offset-md-2 bg-white spacing">
             <form class="p-5">
-                <h2 class="wow bounceInUp">Contact Us</h2>
-                <div class="form-row mt-5">
+                <h2 data-aos="fade-up">Contact Us</h2>
+                <div class="form-row mt-5" data-aos="fade-up" data-aos-duration="1500" class="aos-init aos-animate">
                     <div class="form-group col-lg-6 col-md-12">
                         <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
                     </div>
@@ -118,12 +118,10 @@
         </div>
     </div>
 </div>
-
-
 <div class="appointment-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" class="aos-init aos-animate">
                 <div class="bg-grey">
                     <h4>532 W Glenoaks Blvd Glendale, CA 91202 USA</h4>
                     <div class="bg-white">
@@ -135,19 +133,31 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-7 offset-md-1">
+            <div class="col-md-3 mt-3 mt-md-0" data-aos="fade-up" data-aos-duration="1500" class="aos-init aos-animate">
+              <h4>Services</h3>
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right mr-2"></i>Orthodontics</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right mr-2"></i>Clear Braces</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right mr-2"></i>Invisalign/Clear
+                  Correct</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right mr-2"></i>Retainers</a>
+                <a href="#" class="list-group-item list-group-item-action disabled"><i class="fas fa-angle-right mr-2"></i>View
+                  all services</a>
+              </div>
+            </div>
+            <div class="col-md-5" data-aos="fade-up" data-aos-duration="2000" class="aos-init aos-animate">
                 <h2>Book An Appointment</h2>
                 <form>
                     <div class="form-group">
-                        <input type="text" class="form-control"
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
                                placeholder="Name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control"
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
                                placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" placeholder="Message"
+                        <textarea class="form-control" placeholder="Message" id="exampleFormControlTextarea1"
                                   rows="3"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary mb-2">Submit</button>
@@ -167,12 +177,11 @@
                     <li><a href="#">Terms of Use</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
-                <p>Powered by <a href="#"> Dentistreet</a> © 2018 All Rights Reserved</p>
+                <p>Powered by <a href="https://www.dentistreet.com/Home/" target="_blank"> Dentistreet</a> © 2018 All Rights Reserved</p>
             </div>
         </div>
     </div>
 </footer>
-
 
 <!-- script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -182,9 +191,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-<script type="application/javascript" src="content/js/wow.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    new WOW().init();
+  AOS.init();
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
