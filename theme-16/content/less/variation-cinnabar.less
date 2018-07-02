@@ -262,6 +262,7 @@ body {
 }
 
 .nav-item:focus > a:before, .nav-item > a:hover:before,
+.nav-item:hover > a:before,
 .nav-item.active > a:before, .navbar-nav > .nav-item.open > a:before {
   transition: .3s;
   background: @primary;
@@ -321,7 +322,6 @@ body {
 }
 
 .bg-white-box:before {
-  display: none;
   content: '';
   transform: skewX(-19deg);
   background-color: #fff;
@@ -469,6 +469,12 @@ body {
       color: #e1e1e1;
       border-color: #25272e;
       padding: .25rem 1.25rem;
+      a{
+        color: @white;
+        &:hover{
+          color: @primary;
+        }
+      }
     }
   }
 }
@@ -604,6 +610,76 @@ footer {
   }
 }
 
+@-webkit-keyframes kenburns-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 50%;
+    transform-origin: 16% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+}
+
+@-moz-keyframes kenburns-left {
+  0% {
+    -moz-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -moz-transform-origin: 16% 50%;
+    transform-origin: 16% 50%;
+  }
+  100% {
+    -moz-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -moz-transform-origin: left;
+    transform-origin: left;
+  }
+}
+
+@-o-keyframes kenburns-left {
+  0% {
+    -o-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -o-transform-origin: 16% 50%;
+    transform-origin: 16% 50%;
+  }
+  100% {
+    -o-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -o-transform-origin: left;
+    transform-origin: left;
+  }
+}
+
+@keyframes kenburns-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    -moz-transform: scale(1) translate(0, 0);
+    -o-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 50%;
+    -moz-transform-origin: 16% 50%;
+    -o-transform-origin: 16% 50%;
+    transform-origin: 16% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+    -moz-transform: scale(1.25) translate(-20px, 15px);
+    -o-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left;
+  }
+}
+
+
+/* Media */
 @media (min-width: 992px) {
   .bg-white-box:before {
     right: -103px;
