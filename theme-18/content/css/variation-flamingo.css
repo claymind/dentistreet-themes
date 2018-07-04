@@ -992,6 +992,11 @@ body {
   font-weight: 500;
   overflow-x: hidden;
 }
+#colorlib-page {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 #colorlib-aside {
   padding-top: 3em;
   padding-bottom: 40px;
@@ -1127,6 +1132,9 @@ body {
 aside .nav {
   text-align: center;
   margin-top: 50px;
+}
+aside .nav li {
+  position: relative;
 }
 aside .nav li a {
   font-weight: 500;
@@ -1341,7 +1349,7 @@ footer .visit-timing {
 }
 footer .visit-timing li {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 11px;
   color: #000;
 }
 footer .visit-timing li span {
@@ -1530,13 +1538,9 @@ body.offcanvas .colorlib-nav-toggle {
   #colorlib-main {
     width: 70%;
   }
-}
-@media screen and (min-width: 768px) {
-  footer {
-    padding: 10px;
-  }
   footer img {
-    display: none;
+    bottom: 0;
+    top: auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1562,7 +1566,16 @@ body.offcanvas .colorlib-nav-toggle {
   .feature .table-cell-width td h4 {
     font-size: 15px;
   }
+  footer {
+    padding: 10px;
+  }
   footer img {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  aside .footer {
+    position: static;
+    padding: 0;
   }
 }
