@@ -172,7 +172,11 @@ body {
   font-weight: 500;
   overflow-x: hidden;
 }
-
+#colorlib-page {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
 #colorlib-aside {
   padding-top: 3em;
   padding-bottom: 40px;
@@ -322,6 +326,7 @@ aside {
     text-align: center;
     margin-top: 50px;
     li {
+      position: relative;
       a {
         font-weight: 500;
         color: #c7c7c7;
@@ -557,7 +562,7 @@ footer {
 .inputbox {
   height: 32px;
   width: 200px;
-  margin-top: 5px;
+  margin-top: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -790,5 +795,12 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     img {
       display: none;
     }
+  }
+}
+
+@media screen and (max-width: 768px){
+  aside .footer{
+      position: static;
+      padding: 0;
   }
 }
