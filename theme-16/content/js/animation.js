@@ -3,7 +3,6 @@
   'use strict';
 
 
-
   // Window Scroll
   var windowScroll = function () {
     var lastScrollTop = 0;
@@ -66,19 +65,11 @@
     });
   };
 
-  $(document).ready(function(){
-    $(".dropdown, .btn-group").hover(function(){
-      var dropdownMenu = $(this).children(".dropdown-menu");
-      if(dropdownMenu.is(":visible")){
-        dropdownMenu.parent().toggleClass("open");
-      }
-    });
-  });
+
 
   // Document on load.
   $(function () {
     windowScroll();
     searchIcon();
-    dropdownMenu();
   });
 }());
