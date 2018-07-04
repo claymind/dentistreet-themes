@@ -992,6 +992,11 @@ body {
   font-weight: 500;
   overflow-x: hidden;
 }
+#colorlib-page {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 #colorlib-aside {
   padding-top: 3em;
   padding-bottom: 40px;
@@ -1127,6 +1132,9 @@ body {
 aside .nav {
   text-align: center;
   margin-top: 50px;
+}
+aside .nav li {
+  position: relative;
 }
 aside .nav li a {
   font-weight: 500;
@@ -1563,5 +1571,11 @@ body.offcanvas .colorlib-nav-toggle {
   }
   footer img {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  aside .footer {
+    position: static;
+    padding: 0;
   }
 }
