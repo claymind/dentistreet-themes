@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="content/css/variation-yellow.css" rel="stylesheet" type="text/css"/>
-  <link href="content/css/animate.css" rel="stylesheet" type="text/css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -63,15 +63,15 @@
   <div class="row main-content bg-white mb-5">
     <div class="col-12">
       <div class=" text-center">
-        <div class="main-content__heading wow fadeInDown  text-center">Contact Us</div>
+        <div class="main-content__heading text-center" data-aos="fade-up">Contact Us</div>
       </div>
-      <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have
+      <p class="text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">There are many variations of passages of Lorem Ipsum available, but the majority have
         suffered alteration in
         some form, by injected humour, or randomised words which don't look even slightly believable. If you are going
         to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
         text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
         the first true generator on the Internet.</p>
-      <form class="col-md-8 offset-md-2 grey p-4 mt-5">
+      <form class="col-md-8 offset-md-2 grey p-4 mt-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputEmail4">Email</label>
@@ -152,14 +152,16 @@
 </footer>
 
 
+
 <!-- script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-<script type="application/javascript" src="content/js/wow.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  new WOW().init();
+  AOS.init();
 </script>
+<script type="application/javascript" src="content/js/animation.js"></script>
 </body>
 </html>
