@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="content/css/variation-yellow.css" rel="stylesheet" type="text/css"/>
-  <link href="content/css/animate.css" rel="stylesheet" type="text/css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,13 +61,13 @@
 <div class="container">
   <div class="row main-content bg-white mb-5">
     <div class="col-12 text-center">
-      <div class="main-content__heading wow fadeInDown ">About Us</div>
-      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+      <div class="main-content__heading" data-aos="fade-up">About Us</div>
+      <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
         some form, by injected humour, or randomised words which don't look even slightly believable. If you are going
         to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
         text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
         the first true generator on the Internet.</p>
-      <div class="main-content__heading wow fadeInDown mt-5">Meet The Team</div>
+      <div class="main-content__heading mt-5"  data-aos="fade-up">Meet The Team</div>
     </div>
   </div>
   <div class="row mb-5">
@@ -77,7 +77,7 @@
                                    src="https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/common/img/Dr.-Marine-Martirosyan-Cropped-min.jpg"/>
         </div>
         <div class="col-md-8">
-          <h2>Marine Martirosyan DDS</h2>
+          <h2 class="mt-3 mt-md-0">Marine Martirosyan DDS</h2>
           <strong> Dentist</strong>
           <p> Dr. Martirosyan is a well recognized Cosmetic Dentist in Glendale, CA. She received her degree from the
             prestigious University of Southern California in 1996.</p>
@@ -90,7 +90,7 @@
                                    src="https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/common/img/Dr.-Albert-Vartanian-min.jpg"/>
         </div>
         <div class="col-md-8">
-          <h2>Albert Vartanian DDS</h2>
+          <h2 class="mt-3 mt-md-0">Albert Vartanian DDS</h2>
           <strong> Dentist</strong>
           <p>Dr. Vartanian is a well respected Dentist in Glendale, CA. He received his degree from the prestigious
             University of Southern California in 1999.</p>
@@ -99,7 +99,6 @@
     </div>
   </div>
 </div>
-
 <footer>
   <div class="footer-top">
     <div class="container-fluid">
@@ -161,9 +160,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-<script type="application/javascript" src="content/js/wow.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  new WOW().init();
+  AOS.init();
 </script>
 <script type="application/javascript" src="content/js/animation.js"></script>
 </body>
