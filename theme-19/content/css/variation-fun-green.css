@@ -988,6 +988,34 @@ h3 {
   border-color: #00743f;
   box-shadow: 0 0 0 0.2rem rgba(0, 116, 63, 0.5);
 }
+.sticky-book {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  background: #00743f;
+  padding: 18px 20px 10px 22px;
+  z-index: 10;
+  border-radius: 40px;
+  width: 280px;
+  margin-right: -220px;
+  color: #fff;
+  height: 64px;
+}
+.sticky-book i {
+  font-size: 30px;
+}
+.sticky-book span {
+  padding-left: 15px;
+  font-size: 16px;
+}
+.sticky-book:hover {
+  background: light(#00743f, 10%);
+  margin-right: -20px;
+  -webkit-transition: margin 0.4s ease-in-out;
+  transition: margin 0.4s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+}
 body {
   font-size: 13px;
   color: #5c5c5c;
@@ -1307,6 +1335,46 @@ footer .social-links li a :hover {
 }
 .about .feature-box img {
   height: 240px;
+}
+/* Search */
+.header-search-form.show {
+  filter: alpha(opacity=100);
+  opacity: 1;
+  visibility: visible;
+}
+.header-search-form {
+  position: absolute;
+  right: 25px;
+  top: 100%;
+  width: 300px;
+  opacity: 0;
+  visibility: hidden;
+}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.header-search-field {
+  width: 300px;
+  border: 0;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 9px 12px;
+  font-size: 14px;
+}
+.header-search-submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 @media (max-width: 992px) {
   .banner .carousel-caption {

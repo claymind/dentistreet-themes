@@ -983,6 +983,23 @@ h3 {
   border-color: #7d8b1b;
   box-shadow: 0 0 0 0.2rem rgba(125, 139, 27, 0.5);
 }
+.sticky-book {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  letter-spacing: 2px;
+  background: #7d8b1b;
+  padding: 10px 20px 10px;
+  z-index: 10;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sticky-book:hover {
+  background: #30360a;
+  color: #fff;
+  text-decoration: none;
+}
 body {
   font-size: 13px;
   color: #5e5e5e;

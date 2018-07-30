@@ -163,6 +163,25 @@ h3 {
   }
 }
 
+.sticky-book {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  letter-spacing: 2px;
+  background: @primary;
+  padding: 10px 20px 10px;
+  z-index: 10;
+  color: @white;
+  font-weight: 700;
+  text-transform: uppercase;
+  &:hover {
+    background: darken(@primary, 20%);
+    color: @white;
+    text-decoration: none;
+  }
+}
+
+
 body {
   font-size: @globalSize;
   color: @textColor;
