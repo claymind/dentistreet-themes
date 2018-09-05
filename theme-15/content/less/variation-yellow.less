@@ -78,7 +78,7 @@ body {
 }
 
 .banner-01 {
-  height: 100vh;
+  // height: 100vh;
   width: 100vw;
   background-size: cover;
   background-attachment: fixed;
@@ -90,6 +90,17 @@ body {
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 35%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+     }
   h1 {
     font-size: @globalSize*5;
     color: @white;
@@ -104,6 +115,7 @@ body {
   .btn-primary {
     margin-top: @globalSize*5;
   }
+
 }
 
 .btn {

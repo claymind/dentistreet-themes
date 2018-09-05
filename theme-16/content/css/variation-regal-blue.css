@@ -842,6 +842,13 @@
     background-image: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/common/img/gray_stars@2x.png);
   }
 }
+@font-face {
+  font-family: 'lucida';
+  font-style: normal;
+  src: url("../fonts/lucida/lucida-calligra-regular.eot");
+  src: url("../fonts/lucida/lucida-calligra-regular.woff2") format("woff2"), url("../fonts/lucida/lucida-calligra-regular.woff") format("woff"), url("../fonts/lucida/lucida-calligra-regular.ttf") format("truetype"), url("../fonts/lucida/lucida-calligra-regular.svg#fontawesome") format("svg");
+  font-weight: normal;
+}
 /*variable*/
 /* mixin */
 /*=====================font-family=========================*/
@@ -863,16 +870,16 @@
   border-radius: 50%;
 }
 .primary-bg {
-  background: #003D73;
+  background: #1d93fb;
 }
 a {
-  color: #003D73;
+  color: #1d93fb;
 }
 a:hover {
-  color: #0058a6;
+  color: #4fabfc;
 }
 h1 {
-  color: #003D73;
+  color: #1d93fb;
   font-size: 28px;
   line-height: 34px;
   text-transform: uppercase;
@@ -889,23 +896,23 @@ h2 {
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 61, 115, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(29, 147, 251, 0.5);
 }
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #003D73;
-  border-color: #003D73;
+  background-color: #1d93fb;
+  border-color: #1d93fb;
 }
 .dropdown-item.active,
 .dropdown-item:active {
-  background-color: #003D73;
+  background-color: #1d93fb;
 }
 .btn-primary {
   color: #fff;
-  background-color: #003D73;
-  border-color: #003D73;
+  background-color: #1d93fb;
+  border-color: #1d93fb;
 }
 .btn-white {
   color: #000;
@@ -916,10 +923,10 @@ h2 {
   background-color: #cccccc;
 }
 .btn-link {
-  color: #003D73;
+  color: #1d93fb;
 }
 .btn-link:hover {
-  color: #003D73;
+  color: #1d93fb;
 }
 .btn {
   border-radius: 0;
@@ -927,23 +934,23 @@ h2 {
   font-weight: 500;
 }
 .btn-outline-primary {
-  color: #003D73;
+  color: #1d93fb;
   background-color: transparent;
   background-image: none;
-  border-color: #003D73;
+  border-color: #1d93fb;
 }
 .btn-outline-primary:hover,
 .btn-outline-primary:focus {
-  background: #003D73;
-  border-color: #003D73;
+  background: #1d93fb;
+  border-color: #1d93fb;
 }
 .form-control {
-  padding: .675rem .75rem;
+  padding: 0.675rem 0.75rem;
   border-radius: 0;
 }
 .form-control:focus {
-  border-color: #003D73;
-  box-shadow: 0 0 0 0.2rem rgba(0, 61, 115, 0.5);
+  border-color: #1d93fb;
+  box-shadow: 0 0 0 0.2rem rgba(29, 147, 251, 0.5);
 }
 body {
   font-size: 16px;
@@ -955,7 +962,7 @@ body {
   overflow-x: hidden;
 }
 .bottom-fixed {
-  background: #003D73;
+  background: #1d93fb;
   height: 50px;
   width: 50px;
   position: fixed;
@@ -973,13 +980,13 @@ body {
   position: fixed;
   left: 0;
   top: 50%;
-  background: #003D73;
+  background: #1d93fb;
   padding: 10px;
   z-index: 10;
   color: #fff;
 }
 .sticky-book:hover {
-  background: #00070d;
+  background: #035eaf;
 }
 .banner {
   margin-top: -150px;
@@ -1073,8 +1080,8 @@ body {
 .nav-item:hover > a:before,
 .nav-item.active > a:before,
 .navbar-nav > .nav-item.open > a:before {
-  transition: .3s;
-  background: #003D73;
+  transition: 0.3s;
+  background: #1d93fb;
 }
 /* Search */
 .header-search-form.show {
@@ -1253,7 +1260,7 @@ body {
   font-size: 12px;
   color: #e1e1e1;
   border-color: #25272e;
-  padding: .25rem 1.25rem;
+  padding: 0.25rem 1.25rem;
 }
 footer {
   background: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/16/img/footer-bg.jpg) no-repeat 0 0 #25272e;
@@ -1281,7 +1288,7 @@ footer .social-links li {
   font-size: 18px;
 }
 footer .social-links li a {
-  color: #003D73;
+  color: #1d93fb;
 }
 footer .social-links li a :hover {
   color: #fff;
@@ -1337,7 +1344,7 @@ footer hr {
   margin-bottom: 40px;
 }
 .service-list li div {
-  border: 2px solid #003D73;
+  border: 2px solid #1d93fb;
   width: 70px;
   height: 70px;
   border-radius: 100px;
@@ -1348,10 +1355,10 @@ footer hr {
 .service-list li div:after {
   content: '';
   position: absolute;
-  background: #003D73;
+  background: #1d93fb;
   height: 2px;
   top: 30%;
-  border: 1px solid #003D73;
+  border: 1px solid #1d93fb;
   width: 74%;
   left: -100px;
 }
@@ -1372,7 +1379,7 @@ footer hr {
   text-align: center;
 }
 .team li h4 {
-  color: #003D73;
+  color: #1d93fb;
   margin-top: 10px;
   font-size: 20px;
 }
@@ -1507,7 +1514,7 @@ footer hr {
     margin-top: 90px;
   }
   .navbar-toggler {
-    border-color: #003D73;
+    border-color: #1d93fb;
     color: rgba(255, 255, 255, 0.5);
   }
   .navbar-toggler .navbar-toggler-icon {
@@ -1525,7 +1532,7 @@ footer hr {
   .nav-item:focus .nav-link,
   .nav-item:hover .nav-link,
   .nav-item.active .nav-link {
-    background: #003D73 !important;
+    background: #1d93fb !important;
   }
   .header .collapse .navbar-nav .nav-item .search {
     padding: 10px;

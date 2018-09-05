@@ -842,13 +842,6 @@
     background-image: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/common/img/gray_stars@2x.png);
   }
 }
-@font-face {
-  font-family: 'lucida';
-  font-style: normal;
-  src: url("../fonts/lucida/lucida-calligra-regular.eot");
-  src: url("../fonts/lucida/lucida-calligra-regular.woff2") format("woff2"), url("../fonts/lucida/lucida-calligra-regular.woff") format("woff"), url("../fonts/lucida/lucida-calligra-regular.ttf") format("truetype"), url("../fonts/lucida/lucida-calligra-regular.svg#fontawesome") format("svg");
-  font-weight: normal;
-}
 /*variable*/
 /* mixin */
 /*=====================font-family=========================*/
@@ -936,10 +929,10 @@ h3 {
   color: #fff;
   background-color: #00743f;
   border-color: #00743f;
-  -webkit-transition: .35s;
-  -o-transition: .35s;
-  -moz-transition: .35s;
-  transition: .35s;
+  -webkit-transition: 0.35s;
+  -o-transition: 0.35s;
+  -moz-transition: 0.35s;
+  transition: 0.35s;
 }
 .btn-primary:hover {
   background: #00da76;
@@ -982,7 +975,7 @@ h3 {
   border-color: #00743f;
 }
 .form-control {
-  padding: .675rem .75rem;
+  padding: 0.675rem 0.75rem;
   border-radius: 0;
   border: none;
   border-bottom: 1px solid #cbd5dd;
@@ -1111,10 +1104,10 @@ body {
   -moz-border-radius: 50px;
   border-radius: 50px;
   padding-top: 2px;
-  -webkit-transition: .35s;
-  -o-transition: .35s;
-  -moz-transition: .35s;
-  transition: .35s;
+  -webkit-transition: 0.35s;
+  -o-transition: 0.35s;
+  -moz-transition: 0.35s;
+  transition: 0.35s;
 }
 .header-top .social-links li a i {
   padding: 0;
@@ -1229,7 +1222,7 @@ body {
 .nav-item > a:hover:before,
 .nav-item.active > a:before,
 .navbar-nav > .nav-item.open > a:before {
-  transition: .3s;
+  transition: 0.3s;
   background: #00743f;
 }
 .service-wrap {
@@ -1306,7 +1299,7 @@ body {
   float: left;
 }
 .appointment-section .list-group .list-group-item {
-  padding: .75rem .55rem;
+  padding: 0.75rem 0.55rem;
 }
 .appointment-section .list-group .list-group-item:hover {
   margin-left: 5px;

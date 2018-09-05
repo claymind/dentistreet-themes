@@ -901,7 +901,7 @@ h2 {
   border-color: #e7ab07;
 }
 .form-control {
-  padding: .675rem .75rem;
+  padding: 0.675rem 0.75rem;
   border-radius: 0;
 }
 .form-control:focus {
@@ -938,7 +938,6 @@ body {
   max-height: 80px;
 }
 .banner-01 {
-  height: 100vh;
   width: 100vw;
   background-size: cover;
   background-attachment: fixed;
@@ -950,6 +949,17 @@ body {
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+.banner-01 .carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 35%;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
 }
 .banner-01 h1 {
   font-size: 75px;
@@ -982,7 +992,7 @@ body {
 }
 .header.bg-dark {
   background: rgba(14, 32, 52, 0.9) !important;
-  padding: .4rem 1rem;
+  padding: 0.4rem 1rem;
 }
 .header .navbar-nav .nav-item .nav-link {
   padding-right: 1.5rem;
@@ -1020,7 +1030,7 @@ body {
   height: 25px;
   transition: all 0.25s ease-in 0.25s;
   color: transparent;
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 25px;
 }
 .search-box input[type="text"]:hover {
@@ -1258,7 +1268,8 @@ body {
 .inner-bg {
   background-position: 50% 0;
   background-repeat: no-repeat;
-  height: 320px;
+  height: 350px;
+  background-size: cover;
 }
 .light-grey {
   background: #f8f8f8;

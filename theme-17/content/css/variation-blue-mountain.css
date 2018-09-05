@@ -936,10 +936,10 @@ h3 {
   color: #fff;
   background-color: #16235a;
   border-color: #16235a;
-  -webkit-transition: .35s;
-  -o-transition: .35s;
-  -moz-transition: .35s;
-  transition: .35s;
+  -webkit-transition: 0.35s;
+  -o-transition: 0.35s;
+  -moz-transition: 0.35s;
+  transition: 0.35s;
 }
 .btn-primary:hover {
   background: #2a43ac;
@@ -982,7 +982,7 @@ h3 {
   border-color: #16235a;
 }
 .form-control {
-  padding: .675rem .75rem;
+  padding: 0.675rem 0.75rem;
   border-radius: 0;
   border: none;
   border-bottom: 1px solid #cbd5dd;
@@ -1111,10 +1111,10 @@ body {
   -moz-border-radius: 50px;
   border-radius: 50px;
   padding-top: 2px;
-  -webkit-transition: .35s;
-  -o-transition: .35s;
-  -moz-transition: .35s;
-  transition: .35s;
+  -webkit-transition: 0.35s;
+  -o-transition: 0.35s;
+  -moz-transition: 0.35s;
+  transition: 0.35s;
 }
 .header-top .social-links li a i {
   padding: 0;
@@ -1229,7 +1229,7 @@ body {
 .nav-item > a:hover:before,
 .nav-item.active > a:before,
 .navbar-nav > .nav-item.open > a:before {
-  transition: .3s;
+  transition: 0.3s;
   background: #16235a;
 }
 .service-wrap {
@@ -1306,7 +1306,7 @@ body {
   float: left;
 }
 .appointment-section .list-group .list-group-item {
-  padding: .75rem .55rem;
+  padding: 0.75rem 0.55rem;
 }
 .appointment-section .list-group .list-group-item:hover {
   margin-left: 5px;
