@@ -975,7 +975,7 @@ h3 {
   border-color: #7d8b1b;
 }
 .form-control {
-  padding: .675rem .75rem;
+  padding: 0.675rem 0.75rem;
   border-radius: 0;
   background: transparent;
 }
@@ -1158,7 +1158,7 @@ aside .nav li a {
   color: #c7c7c7;
   text-transform: uppercase;
   display: inline-block;
-  padding: .1rem 1rem;
+  padding: 0.1rem 1rem;
   margin-bottom: 10px;
 }
 aside .nav li a.active,
@@ -1183,7 +1183,7 @@ aside .footer {
   padding: 15px;
 }
 aside .footer .nav-pills a {
-  padding: .5rem .4rem;
+  padding: 0.5rem 0.4rem;
   color: #7d7d7d;
 }
 aside .footer .nav-pills a:hover,
@@ -1361,7 +1361,7 @@ footer .list-group .list-group-item {
   color: #000;
   font-size: 14px;
   border: none;
-  padding: .45rem 0;
+  padding: 0.45rem 0;
 }
 footer h3 {
   font-size: 15px;
@@ -1599,6 +1599,12 @@ body.offcanvas .colorlib-nav-toggle {
   }
 }
 @media screen and (max-width: 768px) {
+  aside .footer {
+    position: static;
+    padding: 0;
+  }
+}
+@media screen and (orientation: landscape) and (min-device-width: 768px) and (max-device-width: 989px) {
   aside .footer {
     position: static;
     padding: 0;
