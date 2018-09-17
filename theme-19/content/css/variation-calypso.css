@@ -979,7 +979,7 @@ h3 {
   border-color: #36688d;
 }
 .form-control {
-  padding: .675rem .75rem;
+  padding: 0.675rem 0.75rem;
   border-radius: 0;
   border-bottom: 2px solid #cbd5dd;
   background: transparent;
@@ -1123,7 +1123,7 @@ body {
   box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.11);
 }
 .header .navbar .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-  padding: .55rem 1.5rem;
+  padding: 0.55rem 1.5rem;
   font-weight: 300;
   color: #929292;
 }
@@ -1273,7 +1273,7 @@ footer h3 {
 footer .list-group .list-group-item {
   background: transparent;
   color: #8f969d;
-  padding: .35rem 0;
+  padding: 0.35rem 0;
 }
 footer .list-group .list-group-item:hover {
   color: #fff;

@@ -904,7 +904,7 @@ a:hover {
 }
 h1 {
   color: #272424;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 36px;
 }
 h2 {
@@ -1238,9 +1238,6 @@ body {
   z-index: 1;
   padding-top: 45px;
   border-radius: 6px;
-}
-.service-wrap p {
-  line-height: 14px;
 }
 .service-wrap .btn {
   position: relative;
