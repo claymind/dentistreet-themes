@@ -990,7 +990,6 @@ body {
 }
 .banner {
   margin-top: -150px;
-  z-index: -2;
 }
 .banner .carousel-caption {
   bottom: 50%;
@@ -1021,6 +1020,7 @@ body {
 }
 .header {
   padding: 0;
+  z-index: 1;
 }
 .header .collapse:before {
   content: '';

@@ -1131,7 +1131,6 @@ body {
   margin-bottom: -30px;
 }
 .bg-white-box:before {
-  display: none;
   content: '';
   transform: skewX(-19deg);
   background-color: #fff;
@@ -1236,6 +1235,9 @@ body {
 .section-heading.three:before {
   content: '3';
 }
+.section-heading.four:before {
+  content: '4';
+}
 .service-section {
   width: 100%;
   height: 480px;
@@ -1261,6 +1263,12 @@ body {
   color: #e1e1e1;
   border-color: #25272e;
   padding: 0.25rem 1.25rem;
+}
+.appointment-bg .list-group .list-group-item a {
+  color: #fff;
+}
+.appointment-bg .list-group .list-group-item a:hover {
+  color: #1d93fb;
 }
 footer {
   background: url(https://dentistreetdev.blob.core.windows.net/design-assets/img/themes/16/img/footer-bg.jpg) no-repeat 0 0 #25272e;
@@ -1480,6 +1488,9 @@ footer hr {
     display: none;
     position: relative;
     min-height: 576px;
+  }
+  .bg-white-box:before {
+    display: none;
   }
   .triangel:before {
     display: none;

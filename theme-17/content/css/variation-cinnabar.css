@@ -1042,7 +1042,6 @@ body {
 }
 .banner {
   margin-top: -150px;
-  z-index: -2;
 }
 .banner .carousel-caption {
   background: rgba(187, 25, 36, 0.5);
@@ -1073,8 +1072,10 @@ body {
   max-height: 80px;
 }
 .header-top {
+  z-index: 1;
   background: #272424;
   height: 50px;
+  position: relative;
 }
 .header-top ul {
   padding: 0;
@@ -1158,6 +1159,7 @@ body {
 .header {
   background: rgba(39, 36, 36, 0.6);
   padding: 0;
+  z-index: 1;
 }
 .header .navbar {
   padding: 0 1rem;

@@ -225,7 +225,6 @@ body {
 
 .banner {
   margin-top: -150px;
-  z-index: -2;
   .carousel-caption {
     background: fade(@primary, 50%);
     bottom: 50%;
@@ -266,8 +265,10 @@ body {
 }
 
 .header-top {
+  z-index: 1;
   background: @darkblue;
   height: 50px;
+  position: relative;
   ul {
     padding: 0;
     li:first-child {
@@ -353,6 +354,7 @@ body {
 .header {
   background: fade(@darkblue, 60%);
   padding: 0;
+  z-index: 1;
   .navbar {
     padding: 0 1rem;
     .collapse {
